@@ -1,5 +1,7 @@
 import { createContext, useState, useEffect } from "react";
 
+import { addCollectionAndDocuments } from "../utils/firebase/firebase.utils";
+
 import { getCategoriesAndDocuments } from "../utils/firebase/firebase.utils";
 
 export const ProductsContext = createContext({
@@ -25,3 +27,4 @@ export const ProductsProvider = ({ children }) => {
     </ProductsContext.Provider>
   );
 };
+/*just a commen*/
